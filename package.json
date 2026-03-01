@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "a tutorial for intro to backend",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/src/index.js",
+    "dev": "nodemon backend/src/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/priyanka080506/backend_practice/issues"
   },
-  "homepage": "https://github.com/priyanka080506/backend_practice#readme"
+  "homepage": "https://github.com/priyanka080506/backend_practice#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
 }
